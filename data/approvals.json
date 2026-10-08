@@ -1,0 +1,53 @@
+{
+  "referenceDate": "2026-09-18",
+  "items": [
+    {
+      "id": "apr-001",
+      "title": "Site Patrol Onboarding & Checklists",
+      "type": "folder",
+      "path": "My Site Patrol > My Site Patrol Card",
+      "submittedBy": "Sam HelpAdmin",
+      "submittedOn": "2026-09-18",
+      "status": "pending_review",
+      "description": "Standard operating procedures, emergency drills and technician check-in checklists for new site patrol staff.",
+      "safetyCritical": false,
+      "blocksOthers": true
+    },
+    {
+      "id": "apr-002",
+      "title": "Level 2 Drone Patrol Video Demo",
+      "type": "video",
+      "path": "Drawing-Videos > Drawing-Videos Card",
+      "submittedBy": "Alex HelpAdmin",
+      "submittedOn": "2026-09-18",
+      "status": "pending_review",
+      "description": "Demonstration video of a level 2 autonomous drone patrol route.",
+      "safetyCritical": false,
+      "blocksOthers": false
+    },
+    {
+      "id": "apr-003",
+      "title": "Safety Equipment & Sensor Specs",
+      "type": "pdf",
+      "path": "Site Recordings > Site Recordings",
+      "submittedBy": "Sam HelpAdmin",
+      "submittedOn": "2026-09-18",
+      "status": "pending_review",
+      "description": "Specification sheet for personal safety equipment and site sensor hardware.",
+      "safetyCritical": true,
+      "blocksOthers": false
+    },
+    {
+      "id": "apr-004",
+      "title": "360° Spatial Zone Layout & Camera Map",
+      "type": "image",
+      "path": "Site Recordings > Site Recordings",
+      "submittedBy": "Elena HelpAdmin",
+      "submittedOn": "2026-09-18",
+      "status": "pending_review",
+      "description": "Image showing the 360-degree zone layout and camera coverage map for the site.",
+      "safetyCritical": false,
+      "blocksOthers": false
+    }
+  ]
+}

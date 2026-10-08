@@ -1,0 +1,49 @@
+{
+  "name": "approvals-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Crystal Ball Wave 2 take-home: LLM-backed Approvals assistant panel (Next.js + Express + Zod)",
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,green \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:server": "tsx watch server/index.ts",
+    "dev:web": "next dev -p 3000",
+    "build": "next build",
+    "start": "concurrently -n api,web \"tsx server/index.ts\" \"next start -p 3000\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.server.json --noEmit",
+    "test": "npm run test:server && npm run test:client",
+    "test:server": "jest",
+    "test:client": "vitest run",
+    "audit": "npm audit --omit=dev"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/supertest": "^7.2.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.5",
+    "jest": "^30.5.2",
+    "jsdom": "^29.1.1",
+    "supertest": "^7.3.1",
+    "ts-jest": "^29.4.14",
+    "tsx": "^4.23.15",
+    "typescript": "5.9",
+    "vitest": "^5.0.3"
+  }
+}
